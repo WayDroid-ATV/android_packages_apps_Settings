@@ -77,6 +77,7 @@ open class FirmwareVersionScreen : PreferenceScreenMixin, PreferenceSummaryProvi
             +MainlineModuleVersionPreference()
             +BasebandVersionPreference()
             +KernelVersionPreference()
+            +OpenGLVersionPreference()
             +LineageBuildDatePreference()
             +SimpleBuildNumberPreference()
         }
