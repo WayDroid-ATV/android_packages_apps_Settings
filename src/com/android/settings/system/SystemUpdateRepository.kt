@@ -28,11 +28,6 @@ class SystemUpdateRepository(context: Context) {
      * Finds a matching activity for the system update intent.
      */
     fun getSystemUpdateIntent(): Intent? {
-        val intent = Intent(Settings.ACTION_SYSTEM_UPDATE_SETTINGS)
-        return packageManager.resolveActivity(intent, PackageManager.MATCH_SYSTEM_ONLY)
-            ?.activityInfo
-            ?.let { activityInfo ->
-                Intent().setClassName(activityInfo.packageName, activityInfo.name)
-            }
+        return Intent().setClassName("org.lineageos.waydroidupdater", "org.lineageos.waydroidupdater.UpdateActivity")
     }
 }
