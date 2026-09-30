@@ -21,6 +21,20 @@
     android:title="@string/header_category_system">
 
     <PreferenceCategory
+        android:key="waydroid_options_category"
+        android:title="@string/waydroid_options"
+        android:order="-410">
+
+        <!-- Waydroid options -->
+        <Preference
+            android:key="waydroid_settings"
+            android:title="@string/waydroid_options"
+            android:icon="@drawable/ic_waydroid"
+            android:fragment="com.android.settings.system.WaydroidOptionsFragment"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="software_update_category"
         android:title="@string/update_device_category_title"
         android:order="-400">
