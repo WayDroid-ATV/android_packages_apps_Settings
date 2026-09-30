@@ -20,6 +20,20 @@
     android:key="system_dashboard_screen"
     android:title="@string/header_category_system">
 
+    <PreferenceCategory
+        android:key="waydroid_options_category"
+        android:title="@string/waydroid_options"
+        android:order="-410">
+
+        <!-- Waydroid options -->
+        <Preference
+            android:key="waydroid_settings"
+            android:title="@string/waydroid_options"
+            android:icon="@drawable/ic_waydroid"
+            android:fragment="com.android.settings.system.WaydroidOptionsFragment"/>
+
+    </PreferenceCategory>
+
     <Preference
         android:key="language_settings"
         android:title="@string/languages_settings"

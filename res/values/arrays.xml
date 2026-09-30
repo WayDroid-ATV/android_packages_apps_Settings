@@ -1665,4 +1665,42 @@
         <item>Quick settings</item>
         <item>Lockscreen</item>
     </string-array>
+
+    <!-- Waydroid options -->
+    <string-array name="native_bridge_entries">
+        <item>Disabled</item>
+        <item>libndk_translation (recommended)</item>
+    </string-array>
+
+    <string-array name="gralloc_impl_entries">
+        <item>Auto (recommended)</item>
+        <item>minigbm</item>
+        <item>minigbm_gbm_mesa</item>
+    </string-array>
+
+    <string-array name="gralloc_impl_values" translatable="false">
+        <item></item>
+        <item>minigbm</item>
+        <item>minigbm_gbm_mesa</item>
+    </string-array>
+
+    <string-array name="device_spoof_entries">
+        <item>Disabled</item>
+    </string-array>
+
+    <string-array name="device_spoof_values" translatable="false">
+        <item></item>
+    </string-array>
+
+    <string-array name="codec2_impl_entries">
+        <item>Auto (recommended)</item>
+        <item>c2.ffmpeg</item>
+        <item>c2.android (requires YUV-capable Gralloc)</item>
+    </string-array>
+
+    <string-array name="codec2_impl_values" translatable="false">
+        <item></item>
+        <item>c2.ffmpeg</item>
+        <item>c2.android</item>
+    </string-array>
 </resources>

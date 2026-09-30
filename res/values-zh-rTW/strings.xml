@@ -5998,4 +5998,39 @@
     <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
     <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
     <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+
+    <string name="waydroid_options">Waydroid 選項</string>
+    <string name="waydroid_notification_channel">Waydroid 通知</string>
+    <string name="waydroid_disabled">已停用</string>
+
+    <string name="current_native_bridge">正在使用的 ARM 轉譯器</string>
+    <string name="current_gralloc_impl">正在使用的 Gralloc 實作</string>
+    <string name="current_codec2_impl">正在使用的 Codec2 實作</string>
+
+    <string name="waydroid_native_bridge_category">ARM 支援</string>
+    <string name="native_bridge">ARM 轉譯器</string>
+    <string name="native_bridge_summary">這對於執行不支援 x86 的程式而言是必須的</string>
+
+    <string name="waydroid_graphics_category">顯示</string>
+    <string name="vulkan">Vulkan</string>
+    <string name="vulkan_summary">使用 Vulkan 進行圖形渲染</string>
+    <string name="gralloc_impl">Gralloc 實作</string>
+    <string name="gralloc_impl_summary">僅 minigbm 支援 YUV 格式</string>
+
+    <string name="waydroid_video_category">視訊</string>
+    <string name="codec2_impl">Codec2 實作</string>
+    <string name="codec2_impl_summary">選擇一種用於視訊處理的 Codec2 實作</string>
+    <string name="hwaccel">硬體視訊加速</string>
+    <string name="hwaccel_summary">啟用基於 VA-API/V4L2 的硬體視訊加速支援</string>
+    <string name="hwaccel_drm_prime">零複製視訊解碼</string>
+    <string name="hwaccel_drm_prime_summary">這通常能提供更好的影片播放效能</string>
+    <string name="hwaccel_force_hwaccel">強制啟用硬體視訊解碼</string>
+    <string name="hwaccel_force_hwaccel_summary">播放影片時僅使用支援硬體解碼的視訊編碼</string>
+    <string name="hwaccel_supported_codecs">目前 GPU 支援硬體解碼的編碼格式</string>
+
+    <string name="waydroid_misc_category">雜項</string>
+    <string name="forward_notifications">通知整合</string>
+    <string name="forward_notifications_summary">透過 D-Bus 將 Android 通知轉發至 Wayland/X11</string>
+
+    <string name="waydroid_restart_toast">重新啟動 Waydroid 以套用變更</string>
 </resources>

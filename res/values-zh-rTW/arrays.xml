@@ -550,4 +550,20 @@
     <item msgid="5687603742365489342">"快速設定"</item>
     <item msgid="5454862951059393431">"螢幕鎖定"</item>
   </string-array>
+
+  <string-array name="gralloc_impl_entries">
+    <item>自動選擇 (建議)</item>
+    <item>minigbm</item>
+    <item>minigbm_gbm_mesa</item>
+  </string-array>
+
+  <string-array name="device_spoof_entries">
+    <item>已停用</item>
+  </string-array>
+
+  <string-array name="codec2_impl_entries">
+    <item>自動選擇 (建議)</item>
+    <item>c2.ffmpeg</item>
+    <item>c2.android (需要支援 YUV 的 Gralloc 實作)</item>
+  </string-array>
 </resources>

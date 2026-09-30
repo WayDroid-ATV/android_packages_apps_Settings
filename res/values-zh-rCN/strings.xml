@@ -5998,4 +5998,39 @@
     <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
     <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
     <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+
+    <string name="waydroid_options">Waydroid 选项</string>
+    <string name="waydroid_notification_channel">Waydroid 通知</string>
+    <string name="waydroid_disabled">已停用</string>
+
+    <string name="current_native_bridge">目前的 ARM 转译层</string>
+    <string name="current_gralloc_impl">目前的 Gralloc 实现</string>
+    <string name="current_codec2_impl">目前的 Codec2 实现</string>
+
+    <string name="waydroid_native_bridge_category">ARM 支持</string>
+    <string name="native_bridge">ARM 转译层</string>
+    <string name="native_bridge_summary">这对于运行不具备 x86 支持的程序来说是必须的</string>
+
+    <string name="waydroid_graphics_category">图形</string>
+    <string name="vulkan">Vulkan</string>
+    <string name="vulkan_summary">使用 Vulkan 进行图形渲染</string>
+    <string name="gralloc_impl">Gralloc 实现</string>
+    <string name="gralloc_impl_summary">只有 minigbm 支持 YUV 格式</string>
+
+    <string name="waydroid_video_category">视频</string>
+    <string name="codec2_impl">Codec2 实现</string>
+    <string name="codec2_impl_summary">选择一种用于视频处理的 Codec2 实现</string>
+    <string name="hwaccel">硬件视频加速</string>
+    <string name="hwaccel_summary">启用基于 VA-API/V4L2 的硬件视频加速支持</string>
+    <string name="hwaccel_drm_prime">零拷贝视频解码支持</string>
+    <string name="hwaccel_drm_prime_summary">这通常能提供更好的视频播放性能</string>
+    <string name="hwaccel_force_hwaccel">强制调用硬件视频解码</string>
+    <string name="hwaccel_force_hwaccel_summary">播放视频时只使用支持硬解的视频编码</string>
+    <string name="hwaccel_supported_codecs">目前 GPU 支持硬解的编码</string>
+
+    <string name="waydroid_misc_category">杂项</string>
+    <string name="forward_notifications">通知集成</string>
+    <string name="forward_notifications_summary">通过 D-Bus 将 Android 通知转发到 Wayland/X11</string>
+
+    <string name="waydroid_restart_toast">重启 Waydroid 以生效</string>
 </resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2026 The WayDroid-ATV Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/waydroid_options">
+
+    <Preference android:key="current_native_bridge"
+                android:title="@string/current_native_bridge"/>
+
+    <Preference android:key="current_gralloc_impl"
+                android:title="@string/current_gralloc_impl"/>
+
+    <Preference android:key="current_codec2_impl"
+                android:title="@string/current_codec2_impl"/>
+
+    <PreferenceCategory android:key="waydroid_native_bridge_category"
+                        android:title="@string/waydroid_native_bridge_category">
+
+        <SwitchPreferenceCompat
+            android:key="native_bridge2"
+            android:title="@string/native_bridge"
+            android:summary="@string/native_bridge_summary"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:key="waydroid_graphics_category"
+                        android:title="@string/waydroid_graphics_category">
+
+        <SwitchPreferenceCompat
+            android:key="vulkan"
+            android:title="@string/vulkan"
+            android:summary="@string/vulkan_summary"/>
+
+        <ListPreference
+            android:key="gralloc_impl"
+            android:title="@string/gralloc_impl"
+            android:summary="@string/gralloc_impl_summary"
+            android:dialogTitle="@string/gralloc_impl"
+            android:entries="@array/gralloc_impl_entries"
+            android:entryValues="@array/gralloc_impl_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:key="waydroid_video_category"
+                        android:title="@string/waydroid_video_category">
+
+        <ListPreference
+            android:key="codec2_impl"
+            android:title="@string/codec2_impl"
+            android:summary="@string/codec2_impl_summary"
+            android:dialogTitle="@string/codec2_impl"
+            android:entries="@array/codec2_impl_entries"
+            android:entryValues="@array/codec2_impl_values" />
+
+        <SwitchPreferenceCompat
+            android:key="hwaccel"
+            android:title="@string/hwaccel"
+            android:summary="@string/hwaccel_summary"/>
+
+
+        <SwitchPreferenceCompat
+            android:key="hwaccel_drm_prime"
+            android:title="@string/hwaccel_drm_prime"
+            android:summary="@string/hwaccel_drm_prime_summary"/>
+
+        <SwitchPreferenceCompat
+            android:key="hwaccel_force_hwaccel"
+            android:title="@string/hwaccel_force_hwaccel"
+            android:summary="@string/hwaccel_force_hwaccel_summary"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:key="waydroid_misc_category"
+                        android:title="@string/waydroid_misc_category">
+
+        <SwitchPreferenceCompat
+            android:key="forward_notifications"
+            android:title="@string/forward_notifications"
+            android:summary="@string/forward_notifications_summary"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -14951,4 +14951,41 @@
     <string name="safety_center_device_finder_search_terms"></string>
     <!-- Safety Center system component update search terms [CHAR LIMIT=NONE] -->
     <string name="safety_center_system_component_update_search_terms"></string>
+
+    <!-- Title of "Waydroid Options" settings -->
+    <string name="waydroid_options">Waydroid options</string>
+    <string name="waydroid_notification_channel">Waydroid notifications</string>
+    <string name="waydroid_disabled">Disabled</string>
+
+    <!-- Description for Waydroid options -->
+    <string name="current_native_bridge">ARM translation layer in use</string>
+    <string name="current_gralloc_impl">Gralloc implementation in use</string>
+    <string name="current_codec2_impl">Codec2 implementation in use</string>
+
+    <string name="waydroid_native_bridge_category">ARM support</string>
+    <string name="native_bridge">ARM translation layer</string>
+    <string name="native_bridge_summary">Required for running applications that only support ARM</string>
+
+    <string name="waydroid_graphics_category">Graphics</string>
+    <string name="vulkan">Vulkan</string>
+    <string name="vulkan_summary">Use Vulkan for graphics rendering</string>
+    <string name="gralloc_impl">Gralloc implementation</string>
+    <string name="gralloc_impl_summary">Only minigbm supports YUV</string>
+
+    <string name="waydroid_video_category">Video</string>
+    <string name="codec2_impl">Codec2 implementation</string>
+    <string name="codec2_impl_summary">Select a Codec2 implementation for video processing</string>
+    <string name="hwaccel">Hardware acceleration for video playback</string>
+    <string name="hwaccel_summary">Enable VA-API/V4L2 based hardware-accelerated video decoding support</string>
+    <string name="hwaccel_drm_prime">Zero-copy video decoding support</string>
+    <string name="hwaccel_drm_prime_summary">This usually provides better video playback performance</string>
+    <string name="hwaccel_force_hwaccel">Force usage of hardware-accelerated video codecs</string>
+    <string name="hwaccel_force_hwaccel_summary">Use only HW codecs for video decoding</string>
+    <string name="hwaccel_supported_codecs">HW codec(s) supported by your GPU</string>
+
+    <string name="waydroid_misc_category">Miscellaneous</string>
+    <string name="forward_notifications">Notification integration</string>
+    <string name="forward_notifications_summary">Forward Android notification to Wayland/X11 via D-Bus</string>
+
+    <string name="waydroid_restart_toast">Restart Waydroid to take effect</string>
 </resources>
